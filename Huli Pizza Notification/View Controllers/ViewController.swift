@@ -33,7 +33,7 @@ class ViewController: UIViewController {
             
             var dateComponents = Calendar.current.dateComponents([.hour, .minute, .second], from: Date())
             
-            dateComponents.second = dateComponents.second! + 5
+            dateComponents.second = dateComponents.second! + 3
             
             let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
             let identifier = "message.scheduled"
